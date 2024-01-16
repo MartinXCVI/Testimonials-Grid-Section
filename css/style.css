@@ -42,20 +42,12 @@ body {
 
 @media all and (min-width: 375px) {
 
-    header {
-        background-color: hsl(184, 9%, 62%);
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-        margin-bottom: 1em;
-        box-shadow: 0em 0.1em 0.3em;
-    }
-
-    header h1 {
-        font-family: 'Barlow Semi Condensed', sans-serif;
-        font-weight: 600;
-        text-align: center;
-        color: hsl(0, 0%, 95%);
-        text-shadow: 0.1em 0.1em 0.1em black;
+    body {
+        width: 100%;
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     main {
@@ -151,9 +143,10 @@ body {
     }
 
     footer {
+        width: fit-content;
         background-color: hsl(184, 9%, 62%);
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
+        padding: 0.5rem 1rem;
+        border-radius: 5rem;
     }
 
     footer p {
@@ -180,8 +173,9 @@ body {
 
 @media all and (min-width: 768px) {
 
-    header {
-        margin-bottom: 2em;
+    body {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     #container {
@@ -203,14 +197,9 @@ body {
 
 @media all and (min-width: 1024px) {
 
-    header {
-        margin-bottom: 3em;
-    }
-
-    header h1 {
-        text-align: left;
-        margin-left: 10%;
-        font-size: 2.5em;
+    body {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 
     #container {
